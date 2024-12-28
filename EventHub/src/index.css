@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Vibrant Gradient Animation for the entire page */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: linear-gradient(270deg, #4e54c8, #8f94fb, #6b8ef7, #4e54c8);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  min-height: 100vh; /* Ensures the background fills the entire page */
+  background-attachment: fixed; /* Keeps the background in place while scrolling */
+}
